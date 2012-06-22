@@ -1,3 +1,5 @@
+% Here we model the reference cavity as a two-mirror cavity for simplicity.
+
 function opt = optRefCav(par)
 
 opt = Optickle(par.Laser.vFrf);
@@ -16,8 +18,8 @@ opt = addLink(opt, 'PM', 'out', 'Mod', 'in', 5);
 
 % [opt, sn] = addMirror(opt, name, aio, Chr, Thr, Lhr, Rar, Lmd, Nmd)
 
-opt = addMirror(opt, 'M1', 0, 0, par.M1.T, par.L, par.Rar,   0e-6);
-opt = addMirror(opt, 'M2', 0, 0, par.M2.T, 200e-6, par.Rar,  0);
+opt = addMirror(opt, 'M1', 0, 0, par.M1.T, par.M1.L, par.Rar,   0e-6);
+opt = addMirror(opt, 'M2', 0, 0, par.M2.T, par.M2.L, par.Rar,  0);
 
 opt = addSink(opt, 'REFL', 1);
 opt = addSink(opt, 'TRANS', 1);
