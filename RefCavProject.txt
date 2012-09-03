@@ -1,0 +1,41 @@
+Reference Cavity to-do list
+
+Suspensions
+ * Assembly - Fu and Manuela
+ * Cabling plan?
+
+Optics (in vacuum)
+ * Core optics - in-hand
+ * Auto-alignment tiptilts
+ * Periscope
+   * Mechanical: complete
+   * Need: 1" HR 45deg s-pol, 1" HR 45deg p-pol mirrors
+ * Modulator
+   * Crystal and holder -- in hand
+   * Matching network -- Glasgow
+   * mechanical support
+   * mode-matching optics
+ * Viewport
+   - in progress
+ * Mode-matching optics
+ * Assorted plumbing optics
+
+Optics (in air)
+ * Viewport mini-bench
+ * Detection bench
+   * RF QPDs x 2
+   * RF PD
+ * South end bench
+   * DC QPD
+   * CCD camera
+
+Electronics
+ * Wenzel oscillator boxes
+ * Main frequency servo board
+ * Suspension coil drivers
+ * RF distribution
+ * Feedthroughs
+
+CDS
+ * Suspensions
+ * RefCav ISC
