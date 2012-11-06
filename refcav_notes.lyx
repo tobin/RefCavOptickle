@@ -1,0 +1,127 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Notes on the 10m Frequency Reference Cavity
+\end_layout
+
+\begin_layout Section
+Background
+\end_layout
+
+\begin_layout Standard
+The goal of the 10m interferometer is to be limited by photon quantum noise
+ (radiation pressure and shot noise) across a wide bandwidth.
+ To eaccomplish this, classical noises must be pushed beneath the level
+ of the quantum noise.
+ One such noise source is laser frequency noise.
+ In a single Fabry-Perot cavity, laser frequency noise is indistinguishable
+ from cavity length fluctuations.
+ A Michelson topology is therefore used to provide a high degree of common
+ mode noise rejection.
+ 
+\end_layout
+
+\begin_layout Standard
+To reduce laser frequency noise to an acceptable level, the laser frequency
+ will be locked to a Fabry-Perot cavity, the frequency reference cavity.
+ The required level of residual frequency noise sets a limit on the displacement
+ noise of this cavity, which, in turn, sets requirements on the degree of
+ mechanical isolation needed.
+\end_layout
+
+\begin_layout Section
+Core optics
+\end_layout
+
+\begin_layout Standard
+To avoid radiation pressure noises, the frequency reference cavity will
+ use higher-mass mirrors than the sub-SQL interferometer, and lower power.
+\end_layout
+
+\begin_layout Section
+Mechanical isolation
+\end_layout
+
+\begin_layout Subsection
+Isolation tables
+\end_layout
+
+\begin_layout Subsection
+Suspensions
+\end_layout
+
+\begin_layout Standard
+Fu is designing the suspensions.
+\end_layout
+
+\begin_layout Section
+Length sensing and control
+\end_layout
+
+\begin_layout Standard
+The cavity will be reflection-locked using the usual PDH scheme.
+ A Wenzel oscillator provides an 8 MHz drive.
+ 
+\end_layout
+
+\begin_layout Standard
+It is not yet decided whether the sub-SQL interferometer will use the same
+ 8 MHz sideband frequency.
+\end_layout
+
+\begin_layout Section
+Angular sensing and control
+\end_layout
+
+\begin_layout Standard
+Angular sensing will be provided by two RF wavefront sensors and one spot-positi
+on QPD.
+\end_layout
+
+\end_body
+\end_document
