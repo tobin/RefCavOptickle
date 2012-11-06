@@ -75,28 +75,117 @@ To reduce laser frequency noise to an acceptable level, the laser frequency
 \end_layout
 
 \begin_layout Section
+Requirements
+\end_layout
+
+\begin_layout Standard
+The in-band requirements of the frequency stabilization system are easy
+ to derive given the sensitivity of the sub-SQL interferometer (given in
+ turn by the SQL) and the assumed common-mode rejection ratio (
+\begin_inset Formula $100\times$
+\end_inset
+
+).
+ The free-running laser is assumed to have a frequency noise of 
+\begin_inset Formula $100\ \mathrm{Hz}/\sqrt{\mathrm{Hz}}$
+\end_inset
+
+ at 
+\begin_inset Formula $100$
+\end_inset
+
+Hz, decreasing as 
+\begin_inset Formula $1/f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The standard quantum limit is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{SQL}=\sqrt{\frac{8\hbar}{m\omega^{2}}}=7.3\times10^{-20}\frac{\mathrm{\mathrm{m}}}{\sqrt{\mathrm{Hz}}}\left(\frac{100\mathrm{\ g}}{m}\right)^{1/2}\left(\frac{200\mathrm{\ Hz}}{f_{SQL}}\right)\]
+
+\end_inset
+
+where 
+\begin_inset Formula $f_{SQL}$
+\end_inset
+
+ is the frequency at which we touch the SQL.
+ To convert to frequency, we multiply by 
+\begin_inset Formula $\nu/L=c/(\lambda L)$
+\end_inset
+
+.
+ We get about 
+\begin_inset Formula $2\times10^{-6}\ \mathrm{Hz}/\sqrt{\mathrm{Hz}}$
+\end_inset
+
+.
+ Compare this to 
+\begin_inset Formula $50\mathrm{\ Hz/\sqrt{\mathrm{Hz}}}$
+\end_inset
+
+ at 200 Hz.
+ Therefore we need to suppress the frequency noise by a factor of 
+\begin_inset Formula $10^{7}$
+\end_inset
+
+ at 200 Hz.
+\end_layout
+
+\begin_layout Standard
+Optical gain
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Drawings/refcavplant.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Laser and reference cavity plant
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Core optics
 \end_layout
 
 \begin_layout Standard
 To avoid radiation pressure noises, the frequency reference cavity will
  use higher-mass mirrors than the sub-SQL interferometer, and lower power.
-\end_layout
-
-\begin_layout Section
-Mechanical isolation
-\end_layout
-
-\begin_layout Subsection
-Isolation tables
-\end_layout
-
-\begin_layout Subsection
-Suspensions
-\end_layout
-
-\begin_layout Standard
-Fu is designing the suspensions.
 \end_layout
 
 \begin_layout Section
@@ -109,11 +198,6 @@ The cavity will be reflection-locked using the usual PDH scheme.
  
 \end_layout
 
-\begin_layout Standard
-It is not yet decided whether the sub-SQL interferometer will use the same
- 8 MHz sideband frequency.
-\end_layout
-
 \begin_layout Section
 Angular sensing and control
 \end_layout
@@ -121,6 +205,162 @@ Angular sensing and control
 \begin_layout Standard
 Angular sensing will be provided by two RF wavefront sensors and one spot-positi
 on QPD.
+\end_layout
+
+\begin_layout Section
+TTFSS Overview
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename TTFSS_overview.pdf
+	width 100col%
+	rotateAngle 90
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Table-Top Frequency Stabilization Servo (TTFSS) overview
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dsfsaf
+\end_layout
+
+\begin_layout Section
+Glossary
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SQL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+standard quantum limit
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TTFSS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+table-top frequency stabilization servo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \end_body

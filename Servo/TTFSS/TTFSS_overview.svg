@@ -30,7 +30,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994951"
      inkscape:cx="527.04593"
-     inkscape:cy="380.23063"
+     inkscape:cy="337.80422"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -686,7 +686,7 @@
        sodipodi:cy="307.82571"
        sodipodi:rx="21.718279"
        sodipodi:ry="21.718279"
-       d="m 256.57875,307.82571 a 21.718279,21.718279 0 1 1 -43.43656,0 21.718279,21.718279 0 1 1 43.43656,0 z"
+       d="m 256.57875,307.82571 c 0,11.99468 -9.7236,21.71828 -21.71828,21.71828 -11.99467,0 -21.71828,-9.7236 -21.71828,-21.71828 0,-11.99467 9.72361,-21.71827 21.71828,-21.71827 11.99468,0 21.71828,9.7236 21.71828,21.71827 z"
        transform="matrix(0.07378649,0,0,0.07378649,442.6999,226.51314)" />
     <g
        id="g5563"
@@ -3339,7 +3339,7 @@
        sodipodi:cy="307.82571"
        sodipodi:rx="21.718279"
        sodipodi:ry="21.718279"
-       d="m 256.57875,307.82571 a 21.718279,21.718279 0 1 1 -43.43656,0 21.718279,21.718279 0 1 1 43.43656,0 z"
+       d="m 256.57875,307.82571 c 0,11.99468 -9.7236,21.71828 -21.71828,21.71828 -11.99467,0 -21.71828,-9.7236 -21.71828,-21.71828 0,-11.99467 9.72361,-21.71827 21.71828,-21.71827 11.99468,0 21.71828,9.7236 21.71828,21.71827 z"
        transform="matrix(0.22652968,0,0,0.22652968,-3.7456196,805.57776)" />
     <g
        id="g3473"
@@ -3451,7 +3451,7 @@
          y="778.00787"
          x="63.747818"
          sodipodi:role="line"
-         id="tspan3505"></tspan><tspan
+         id="tspan3505" /><tspan
          y="787.11426"
          x="63.747814"
          sodipodi:role="line"
@@ -3552,29 +3552,6 @@
          x="58.528057"
          id="tspan3543"
          sodipodi:role="line">OK</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans Mono;-inkscape-font-specification:Droid Sans Mono"
-       x="550.53314"
-       y="27.896338"
-       id="text3547"
-       transform="translate(0,308.26747)"><tspan
-         sodipodi:role="line"
-         id="tspan3549"
-         x="550.53314"
-         y="27.896338">Glossary:</tspan><tspan
-         sodipodi:role="line"
-         x="550.53314"
-         y="40.396339"
-         id="tspan3551" /><tspan
-         sodipodi:role="line"
-         x="550.53314"
-         y="52.896339"
-         id="tspan3553">AO - Additive Offset</tspan><tspan
-         sodipodi:role="line"
-         x="550.53314"
-         y="52.896339"
-         id="tspan3555" /></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans Mono;-inkscape-font-specification:Droid Sans Mono"

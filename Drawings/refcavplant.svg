@@ -12,8 +12,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="697.92792"
+   height="359.1839"
    id="svg2"
    version="1.1"
    inkscape:version="0.47 r22583"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="439.17125"
-     inkscape:cy="674.19284"
+     inkscape:cx="275.41811"
+     inkscape:cy="153.17541"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,46 +35,47 @@
      inkscape:window-height="1029"
      inkscape:window-x="0"
      inkscape:window-y="1"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     units="in" />
   <defs
      id="defs4">
     <marker
        style="overflow:visible"
        id="TriangleOutM"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="TriangleOutM">
       <path
-         transform="scale(0.4)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         transform="scale(0.4,0.4)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
          id="path9526" />
     </marker>
     <marker
        style="overflow:visible"
        id="TriangleOutL"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="TriangleOutL">
       <path
-         transform="scale(0.8)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         transform="scale(0.8,0.8)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
          id="path9523" />
     </marker>
     <marker
-       style="overflow:visible;"
+       style="overflow:visible"
        id="Arrow1Mend"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Mend">
       <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
          id="path9389" />
     </marker>
     <inkscape:perspective
@@ -541,42 +542,42 @@
        inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
        id="perspective11327" />
     <marker
-       style="overflow:visible;"
+       style="overflow:visible"
        id="Arrow1MendY"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1MendY">
       <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="marker-start:none;stroke:#d40000;stroke-width:1.0pt;fill:#d40000;fill-rule:evenodd"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#d40000;fill-rule:evenodd;stroke:#d40000;stroke-width:1pt;marker-start:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
          id="path12046" />
     </marker>
     <marker
-       style="overflow:visible;"
+       style="overflow:visible"
        id="Arrow1Mendh"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Mendh">
       <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="marker-start:none;stroke:#008080;stroke-width:1.0pt;fill:#008080;fill-rule:evenodd"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#008080;fill-rule:evenodd;stroke:#008080;stroke-width:1pt;marker-start:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
          id="path12399" />
     </marker>
     <marker
-       style="overflow:visible;"
+       style="overflow:visible"
        id="Arrow1Mendy"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Mendy">
       <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="marker-start:none;stroke:#008080;stroke-width:1.0pt;fill:#008080;fill-rule:evenodd"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#008080;fill-rule:evenodd;stroke:#008080;stroke-width:1pt;marker-start:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
          id="path12736" />
     </marker>
     <linearGradient
@@ -602,7 +603,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3818"
-       id="linearGradient13112"
+       id="linearGradient3821"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.8,0,0,0.8,-34.8284,-61.1108)"
        x1="43.5355"
@@ -625,13 +626,14 @@
   <g
      id="layer1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     inkscape:label="Layer 1"
+     transform="translate(-35.181716,-74.651882)">
     <use
        x="0"
        y="0"
        xlink:href="#use12320"
        id="use12322"
-       transform="matrix(1.1000715,0,0,0.79289628,-507.07791,23.187421)"
+       transform="matrix(0.95692274,0,0,0.79289628,-436.85473,23.187421)"
        width="744.09448"
        height="1052.3622"
        style="fill:#ffeeaa" />
@@ -640,16 +642,16 @@
        y="0"
        xlink:href="#rect12318"
        id="use12320"
-       transform="matrix(1,0,0,0.99730815,220,0.3517079)"
+       transform="matrix(0.82624155,0,0,0.99730815,301.71591,0.3517079)"
        width="744.09448"
        height="1052.3622"
        style="fill:#ffeeaa" />
     <rect
        style="color:#000000;fill:#ffeeaa;stroke:#cccccc;stroke-width:1.7387538;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect12318"
-       width="198.11839"
+       width="236.68982"
        height="236.68983"
-       x="271.29794"
+       x="232.7265"
        y="112.37441"
        rx="13.492028"
        ry="11.87429" />
@@ -678,7 +680,7 @@
        style="fill:none;stroke:#008080;stroke-width:1.88281107;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Mendh)" />
     <path
        id="path11383"
-       d="m 220.19295,307.67466 0,-97.66067"
+       d="m 198.19295,307.67466 0,-97.66067"
        style="fill:none;stroke:#008080;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <path
        id="path11379"
@@ -702,7 +704,7 @@
          style="fill:none;stroke:#d40000;stroke-width:4.84521723;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
     <g
-       transform="translate(204.22745,180.00508)"
+       transform="translate(182.22745,180.00508)"
        id="g4596"
        i:layer="yes"
        i:dimmedPercent="50"
@@ -848,7 +850,7 @@
              style="stop-color:#89A4B6" />
         </linearGradient>
         <rect
-           style="fill:url(#linearGradient13112);fill-opacity:1;stroke:#000000;stroke-width:0.75"
+           style="fill:url(#linearGradient3821);fill-opacity:1;stroke:#000000;stroke-width:0.75"
            x="0.375"
            y="0.375"
            i:knockout="Off"
@@ -1037,7 +1039,7 @@
           <polygon
              style="fill:#ffdd55;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"
              i:knockout="Off"
-             points="3.078,15.965 10.23,6.412 17.382,15.965 17.382,15.965 3.078,15.965 "
+             points="3.078,15.965 3.078,15.965 10.23,6.412 17.382,15.965 17.382,15.965 "
              id="polygon10373"
              transform="matrix(0.62730791,0,0,0.62730791,4.0671638,3.9865138)" />
           <line
@@ -1097,7 +1099,7 @@
          sodipodi:type="arc" />
     </g>
     <g
-       transform="matrix(0.31955294,0,0,0.31955294,142.56022,145.26535)"
+       transform="matrix(0.31955294,0,0,0.31955294,120.56022,145.26535)"
        id="g5593">
       <path
          transform="translate(8.0812184,227.15285)"
@@ -1218,7 +1220,12 @@
          x="278.57141"
          y="418.93362"
          style="font-weight:bold;-inkscape-font-specification:DejaVu Sans Mono Bold"
-         id="tspan13116">FSR = 565.65 MHz</tspan></text>
+         id="tspan13116">FSR = 565.65 MHz</tspan><tspan
+         sodipodi:role="line"
+         x="278.57141"
+         y="431.43362"
+         style="font-weight:bold;-inkscape-font-specification:DejaVu Sans Mono Bold"
+         id="tspan3815">pole = 300 kHz</tspan></text>
     <text
        id="text12310"
        y="369.46585"
@@ -1279,7 +1286,12 @@
          x="70.714287"
          y="216.79076"
          id="tspan13006"
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">laser</tspan></text>
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">laser</tspan><tspan
+         sodipodi:role="line"
+         x="70.714287"
+         y="231.79076"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         id="tspan3813">35 W</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans Mono;-inkscape-font-specification:Droid Sans Mono"
@@ -1303,12 +1315,56 @@
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans Mono;-inkscape-font-specification:Droid Sans Mono"
-       x="211.85715"
+       x="189.85715"
        y="339.64789"
        id="text13016"><tspan
          sodipodi:role="line"
          id="tspan13018"
-         x="211.85715"
+         x="189.85715"
          y="339.64789">EOM</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:none;stroke:#d40000;stroke-width:4.62068939;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path2991"
+       sodipodi:cx="223.57143"
+       sodipodi:cy="120.21932"
+       sodipodi:rx="47.857143"
+       sodipodi:ry="47.857143"
+       d="m 271.42857,120.21932 c 0,26.43077 -21.42637,47.85715 -47.85714,47.85715 -26.43077,0 -47.85715,-21.42638 -47.85715,-47.85715 0,-26.430768 21.42638,-47.857141 47.85715,-47.857141 26.43077,0 47.85714,21.426373 47.85714,47.857141 z"
+       transform="matrix(0.64925374,0,0,0.64925374,134.48827,148.95219)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path2991"
+       id="use3801"
+       transform="translate(-4,-6)"
+       width="744.09448"
+       height="1052.3622" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use3801"
+       id="use3803"
+       transform="translate(-4,-6)"
+       width="744.09448"
+       height="1052.3622" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans Mono;-inkscape-font-specification:Droid Sans Mono"
+       x="246.42857"
+       y="281.64789"
+       id="text3805"><tspan
+         sodipodi:role="line"
+         id="tspan3807"
+         x="246.42857"
+         y="281.64789">Fiber</tspan><tspan
+         sodipodi:role="line"
+         x="246.42857"
+         y="294.14789"
+         id="tspan3811">8 meters</tspan><tspan
+         sodipodi:role="line"
+         x="246.42857"
+         y="306.64789"
+         id="tspan3809" /></text>
   </g>
 </svg>
