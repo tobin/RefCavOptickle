@@ -21,6 +21,12 @@ opt = addLink(opt, 'PM', 'out', 'Mod', 'in', 5);
 opt = addMirror(opt, 'M1', 0, 0, par.M1.T, par.M1.L, par.Rar,   0e-6);
 opt = addMirror(opt, 'M2', 0, 0, par.M2.T, par.M2.L, par.Rar,  0);
 
+% Specify the suspensions
+% dampRes = [0.01 + 1i, 0.01 - 1i];
+% opt = setMechTF(opt, 'IX', zpk([], -w * dampRes, 1 / mI));
+% opt = setMechTF(opt, 'EX', zpk([], -w * dampRes, 1 / mE));
+% 
+
 opt = addSink(opt, 'REFL', 1);
 opt = addSink(opt, 'TRANS', 1);
 

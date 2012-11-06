@@ -28,14 +28,16 @@ par.Rar = 0;
 % Variant #1: Design configuration
 par1 = par;
 
-% Variant #2: 1000ppm and 600 ppm
-par.M1.T = 1000e-6;
-par.M2.T = 600e-6;
+% Variant #2: 1000ppm and 600 ppm, twice the power
+par.M1.T = 2 * par1.M1.T;
+par.M2.T = 2 * par1.M2.T;
+par.Laser.power = (260/160)^2 * par1.Laser.power;
 par2 = par;
 
-% Variant #3: 1000ppm and 1000 ppm
+% Variant #3: 1000ppm and 1000 ppm, twice the power
 par.M1.T = 1000e-6;
 par.M2.T = 1000e-6;
+par.Laser.power = (260/107)^2 * par1.Laser.power;
 par3 = par;
 
 % Do the simulation
@@ -47,7 +49,7 @@ f = logspace(log10(1), log10(10000), 300);
 [fDC1, sigDC1, sigAC1, mMech1, noiseAC1, noiseMech1] = tickle(opt1, [], f);
 [fDC2, sigDC2, sigAC2, mMech2, noiseAC2, noiseMech2] = tickle(opt2, [], f);
 [fDC3, sigDC3, sigAC3, mMech3, noiseAC3, noiseMech3] = tickle(opt3, [], f);
-
+%
 nREFL_Iprobe = getProbeNum(opt1, 'REFL_I');
 nREFL_Qprobe = getProbeNum(opt1, 'REFL_Q');
 
@@ -71,9 +73,7 @@ hold off
 legend('500 / 300 (design)', '1000 / 600', '1000 ppm / 1000 ppm');
 xlabel('frequency [Hz]');
 ylabel('Hz / rtHz');
-title(sprintf('reference cavity shot-noise-limited sensitivity /\n assumes 200 ppm intra-cavity loss, 130 mW incident power /\n mod depth 0.6 radians, no higher order modes'));
-ylim([1e-6 1e-5]);
-%%
 
-
-
+showsigDC(opt1, sigDC1);
+showsigDC(opt2, sigDC2);
+showsigDC(opt2, sigDC3);
