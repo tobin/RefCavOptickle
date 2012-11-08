@@ -27,7 +27,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
      inkscape:cx="275.41811"
-     inkscape:cy="153.17541"
+     inkscape:cy="151.74684"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1246,7 +1246,22 @@
          x="496.14285"
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-         id="tspan13120">impedance-matched</tspan></text>
+         id="tspan13120">impedance-matched</tspan><tspan
+         y="406.96585"
+         x="496.14285"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         id="tspan3000">Finesse = 7000</tspan><tspan
+         y="419.46585"
+         x="496.14285"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         id="tspan3002">FSR = 12.19 MHz</tspan><tspan
+         y="431.96585"
+         x="496.14285"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         id="tspan3004">pole = 870 Hz</tspan></text>
     <g
        id="g12996"
        transform="matrix(0.31955294,0,0,0.31955294,577.27451,202.55106)">

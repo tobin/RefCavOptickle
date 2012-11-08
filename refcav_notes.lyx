@@ -131,11 +131,24 @@ where
 \end_inset
 
  at 200 Hz.
- Therefore we need to suppress the frequency noise by a factor of 
+ The SQL is lower than the free-running NPRO noise by a factor of 
 \begin_inset Formula $10^{7}$
 \end_inset
 
  at 200 Hz.
+ If we divide this by the common mode rejection ratio (
+\begin_inset Formula $100\times$
+\end_inset
+
+), and then multiply by a desired safety factor (
+\begin_inset Formula $10$
+\end_inset
+
+), we get the required frequency noise suppression factor at 200 Hz: 
+\begin_inset Formula $10^{6}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
