@@ -1,0 +1,195 @@
+################################################################################
+# LIGO Table Top Frequency Stabilization Servo (TTFSS) - LISO Model            #
+################################################################################
+
+# Tobin Fricke  <tobin.fricke@aei.mpg.de>
+# 2013-02-02
+#
+# This is an input file for LISO, the frequency domain circuit analysis tool
+# by Gerhard Heinzel: ftp://ftp.rzg.mpg.de/pub/grav/ghh/liso
+#
+# Node naming convention:
+#
+# * nTP11 = net with testpoint 11
+# * nU3m  = "minus" input to op-amp U3
+# * nC11_R14 = the node between C11 and R14
+#
+# "Not loaded" components should be omitted or commented out, 
+# since C=0 or R=inf will crash LISO with "errcode=3".
+#
+# Schematics are here: https://awiki.ligo-wa.caltech.edu/aLIGO/TTFSS
+
+###############################################################################
+# Common path - from D040105 rev C page 1                                     #
+###############################################################################
+
+r  r3 124       nTP1 nU3m
+#c c1 NL        nU3m nTP5    # Not Loaded
+r  r4 392       nU3m nTP5
+op U3 ad829 gnd nU3m nTP5
+
+r r7 100        nTP5 nU2Ap
+#c c4 NL        nTP5 nU2Ap   # Not Loaded
+
+# Common variable gain
+
+op U2A op00 nU2Ap gnd nCOM a0=30 gbw=1G    # AD602 VGA, -10 to +30 dB
+r rU2Ap 100 nU2Ap gnd                      # input impedance
+
+###############################################################################
+# EOM path - from D040105 rev C page 2                                        #
+###############################################################################
+
+# Notch for EOM resonance
+c c11  330p nCOM     nC11_R14
+r r14 3.01k nC11_R14 nR14_R15
+#c c12 NL   nCOM     nC11_R14
+#r r16 NL   nCOM     nR14_R15
+
+l l1  220u  nR14_R15 nL1_C13 
+#c c14 NL   nL1_C13  gnd        # Not Loaded  
+c c13 4.5p  nL1_C13  gnd        # variable: 4.5-65pF
+
+r r15 100   nR14_R15 nU6m       # sums into U6
+
+# U4 stage
+
+c c23 1u    nCOM      nC23_R22
+r r22 1.1k  nC23_R22  nU4m
+
+#r r23 NL   nU4m      gnd       # Not Loaded
+
+r r17 0     nU4m      nR17_C15
+c c15 3.3n  nR17_C15  nTP11
+#c c17 NL   nU4m      nTP11     # Not Loaded
+r r19 24.9k nU4m      nTP11
+
+op U4 ad797 gnd nU4m  nTP11
+
+# U5 stage
+
+c c24 1u    nTP11     nC24_R24
+r r24 1.3k  nC24_R24  nU5m
+
+r r18 1.5k  nU5m      nR18_C16
+c c16 3.3n  nR18_C16  nTP12
+c c18 33p   nU5m      nTP12
+r r20 47k   nU5m      nTP12
+op U5 ad797 gnd nU5m  nTP12
+
+# U6 stage
+
+c c25 1u    nTP12     nC25_R25
+r r25 499   nC25_R25  nU6m
+#c c19 NL   nU6m      nEOM     # Not Loaded
+r r21 10k   nU6m      nEOM
+op U6 ad829 gnd nU6m  nEOM
+
+
+###############################################################################
+# High-Voltage section - from D0901893 rev A                                  #
+###############################################################################
+
+# the parts in this section have numbers that conflict with the parts in other
+# sections; thus all the names are suffixed with _hv.
+
+# AD829 path:
+
+c c23_hv 100p nEOM         nC23_R43_hv
+r r43_hv  10k nC23_R43_hv  nU5m_hv
+r r44_hv 499  gnd          nU5m_hv
+r r46_hv  10k nU5m_hv      nTP2_hv      # feedback resistor for the AD829
+op U5_hv ad829  gnd nU5m_hv      nTP2_hv
+
+# PA98 path:
+
+c c21_hv   1n nEOM         nC21_R42_hv
+c c22_hv 220n nEOM         nC21_R42_hv
+r r42_hv 3.3k nC21_R42_hv  nU6m_hv
+r r47_hv 100k nU6m_hv      nTP3_hv
+r r45_hv 1k   nU6m_hv      nR45_C25_hv
+c c25_hv 47p  nR45_C25_hv  nTP3_hv
+op U6_hv pa85  gnd  nU6m_hv      nTP3_hv
+
+# Some kind of T-network to put them together:
+
+r r52_hv 150  nTP2_hv      nR52_C35_hv
+c c35_hv 1n   nTP3_hv      nR52_C35_hv
+r r53_hv 49.9 gnd          nR52_C35_hv
+
+r r55_hv 100  nTP3_hv      nPC_OUT
+
+###############################################################################
+# PZT path - from D040105 rev C page 3                                        #
+###############################################################################
+
+# VGA
+
+r r34 150   nCOM      nU2Bp
+
+op U2B op00 nU2Bp gnd nTP17 a0=30         # AD602 VGA, -10 to +30 dB
+r rU2Bp 100 nU2Bp gnd                # input impedanece
+
+# U8 stage
+
+r r35 560   nTP17     nU8m
+r r38 499   gnd       nU8p
+
+c c36 3.3n  nU8m      nTP14
+r r30 4.87k nU8m      nTP14
+op U8 op27  nU8p nU8m nTP14
+
+# U9 stage
+
+r r36 750   nTP14     nU9m
+c c37 1.5n  nU9m      nTP15
+r r31 3.09k nU9m      nTP15
+op U9 ad797 gnd nU9m  nTP15
+
+# Notch for PZT resonance
+
+r r37 499   nTP15     nR37_R32
+r r39  33   nR37_R32  nR39_L2
+r r32 499   nR37_R32  nU7m
+l l2  470u  nR39_L2   nL2_C47
+c c47 910p  nL2_C47   gnd
+c c46 4.5p  nL2_C47   gnd
+
+# U7 stage: buffer for the notch
+
+r r29 5.6k  nU7m      nTP16
+#c c35 NL    nU7m      nTP16
+op U7 ad829 gnd nU7m  nTP16  # FIXME: Actually ad847
+
+# U11 stage: summing junction
+
+r r47 5.6k  nTP16     nU11m
+#r r49 56k  nJ9       nU11m   # EXC input
+r r40 5.6k  nU11m     nTP18
+op U11 op27 gnd nU11m nTP18
+
+# U10 stage: inverter
+
+r r48 5.6k  nTP18     gnd
+r r43 5.6k  nTP18     nU10m
+r r41 5.6k  nU10m     nTP19
+op U10 ad829 gnd nU10m nTP19   # FIXME: Actually ad847
+
+# PZT output
+
+r r46 15.8k nTP19     nFAST_OUT
+c c51 1u    gnd       nFAST_OUT 
+
+###############################################################################
+# The EOM itself                                                              #
+###############################################################################
+
+c theEOM 20p nPC_OUT gnd
+
+###############################################################################
+# Computation commands
+###############################################################################
+
+uinput nTP1 0
+freq log 1 10M 10000
+uoutput nPC_OUT:db nFAST_OUT:db
