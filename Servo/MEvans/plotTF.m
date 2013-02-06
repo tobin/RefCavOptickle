@@ -1,9 +1,14 @@
 
+if ~exist('filtZPGQ')
+  addpath('/home/tofric/iscmodeling/lentickle/mf');
+end
+
+
 f = logspace(log10(10), log10(1e6), 200);
 
-param = paramTTFSS();
+param = paramTTFSS_cavity(3, f);
 
-[hOL, hCross, hEOM, hPZT, info] = getTFs(paramTTFSS(3, f), true, f);
+[hOL, hCross, hEOM, hPZT, info] = getTTFSS_cavity(param, f);
 
 G = hOL(:,3);
 
